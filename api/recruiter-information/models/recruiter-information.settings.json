@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recruiter_informations",
+  "info": {
+    "name": "Clinic Information",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profile_photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "banner_photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "about": {
+      "type": "richtext"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "city_id": {
+      "model": "city"
+    },
+    "facebook_link": {
+      "type": "string"
+    },
+    "twitter_link": {
+      "type": "string"
+    },
+    "linkedin_link": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "office_type_id": {
+      "model": "office-type"
+    },
+    "office_size_id": {
+      "model": "office-size"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recruiter_posts",
+  "info": {
+    "name": "Recruiter Posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "designation_id": {
+      "model": "designation"
+    },
+    "role_id": {
+      "model": "dentist-role"
+    },
+    "experience": {
+      "type": "string",
+      "maxLength": 4
+    },
+    "skillset_type_id": {
+      "model": "skillset-type"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "salary_min": {
+      "type": "string"
+    },
+    "salary_max": {
+      "type": "string"
+    },
+    "post_date": {
+      "type": "date"
+    },
+    "city_id": {
+      "model": "city"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

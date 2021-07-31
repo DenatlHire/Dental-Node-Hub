@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/administrative-roles",
+      "handler": "administrative-roles.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/administrative-roles/count",
+      "handler": "administrative-roles.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/administrative-roles/:id",
+      "handler": "administrative-roles.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/administrative-roles",
+      "handler": "administrative-roles.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/administrative-roles/:id",
+      "handler": "administrative-roles.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/administrative-roles/:id",
+      "handler": "administrative-roles.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

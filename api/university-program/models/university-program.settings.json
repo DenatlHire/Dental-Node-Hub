@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "university_programs",
+  "info": {
+    "name": "User Program Data",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "university_college_id": {
+      "model": "university-college"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "start_month": {
+      "type": "string",
+      "required": true
+    },
+    "start_year": {
+      "type": "string",
+      "required": true
+    },
+    "end_month": {
+      "type": "string"
+    },
+    "end_year": {
+      "type": "string"
+    },
+    "is_present": {
+      "type": "boolean",
+      "default": false
+    },
+    "course_id": {
+      "model": "course"
+    }
+  }
+}

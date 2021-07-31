@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/university-programs",
+      "handler": "university-program.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/university-programs/count",
+      "handler": "university-program.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/university-programs/:id",
+      "handler": "university-program.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/university-programs",
+      "handler": "university-program.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/university-programs/:id",
+      "handler": "university-program.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/university-programs/:id",
+      "handler": "university-program.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

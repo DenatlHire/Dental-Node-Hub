@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/university-colleges",
+      "handler": "university-college.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/university-colleges/count",
+      "handler": "university-college.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/university-colleges/:id",
+      "handler": "university-college.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/university-colleges",
+      "handler": "university-college.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/university-colleges/:id",
+      "handler": "university-college.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/university-colleges/:id",
+      "handler": "university-college.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

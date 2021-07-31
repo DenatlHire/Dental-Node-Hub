@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "administrative_roles",
+  "info": {
+    "name": "Administrative Roles"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    }
+  }
+}

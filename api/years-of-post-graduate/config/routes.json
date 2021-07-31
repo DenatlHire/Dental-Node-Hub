@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/years-of-post-graduates",
+      "handler": "years-of-post-graduate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/years-of-post-graduates/count",
+      "handler": "years-of-post-graduate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/years-of-post-graduates/:id",
+      "handler": "years-of-post-graduate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/years-of-post-graduates",
+      "handler": "years-of-post-graduate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/years-of-post-graduates/:id",
+      "handler": "years-of-post-graduate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/years-of-post-graduates/:id",
+      "handler": "years-of-post-graduate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

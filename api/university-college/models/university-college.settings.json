@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "university_colleges",
+  "info": {
+    "name": "University/College"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinic_staffs",
+  "info": {
+    "name": "Clinic Staff",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "designation_id": {
+      "model": "designation"
+    },
+    "role_id": {
+      "model": "dentist-role"
+    },
+    "total_experience": {
+      "type": "string",
+      "maxLength": 4
+    },
+    "can_manage": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": false
+    },
+    "password": {
+      "type": "password"
+    }
+  }
+}

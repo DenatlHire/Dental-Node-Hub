@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "office_sizes",
+  "info": {
+    "name": "Office Size"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

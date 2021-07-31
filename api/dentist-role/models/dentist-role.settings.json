@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dentist_roles",
+  "info": {
+    "name": "Dentist Role",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "parent_role": {
+      "model": "dentist-role"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contract_types",
+  "info": {
+    "name": "Contract Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "designation_id": {
+      "model": "designation"
+    }
+  }
+}

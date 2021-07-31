@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recruiter-posts",
+      "handler": "recruiter-posts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recruiter-posts/count",
+      "handler": "recruiter-posts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recruiter-posts/:id",
+      "handler": "recruiter-posts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recruiter-posts",
+      "handler": "recruiter-posts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recruiter-posts/:id",
+      "handler": "recruiter-posts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recruiter-posts/:id",
+      "handler": "recruiter-posts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/clinical-experiences",
+      "handler": "clinical-experience.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinical-experiences/count",
+      "handler": "clinical-experience.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinical-experiences/:id",
+      "handler": "clinical-experience.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clinical-experiences",
+      "handler": "clinical-experience.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/clinical-experiences/:id",
+      "handler": "clinical-experience.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clinical-experiences/:id",
+      "handler": "clinical-experience.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

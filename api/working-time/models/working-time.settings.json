@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "working_times",
+  "info": {
+    "name": "Working Time"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

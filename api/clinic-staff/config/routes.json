@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/clinic-staffs",
+      "handler": "clinic-staff.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinic-staffs/count",
+      "handler": "clinic-staff.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinic-staffs/:id",
+      "handler": "clinic-staff.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clinic-staffs",
+      "handler": "clinic-staff.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/clinic-staffs/:id",
+      "handler": "clinic-staff.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clinic-staffs/:id",
+      "handler": "clinic-staff.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

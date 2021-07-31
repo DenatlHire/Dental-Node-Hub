@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinic_addresses",
+  "info": {
+    "name": "Clinic Address"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "richtext",
+      "required": true
+    },
+    "city_id": {
+      "model": "city"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    }
+  }
+}

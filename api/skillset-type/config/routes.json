@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/skillset-types",
+      "handler": "skillset-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skillset-types/count",
+      "handler": "skillset-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/skillset-types/:id",
+      "handler": "skillset-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/skillset-types",
+      "handler": "skillset-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/skillset-types/:id",
+      "handler": "skillset-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/skillset-types/:id",
+      "handler": "skillset-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

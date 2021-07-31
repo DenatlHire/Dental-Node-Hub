@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dentist-roles",
+      "handler": "dentist-role.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dentist-roles/count",
+      "handler": "dentist-role.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dentist-roles/:id",
+      "handler": "dentist-role.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dentist-roles",
+      "handler": "dentist-role.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dentist-roles/:id",
+      "handler": "dentist-role.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dentist-roles/:id",
+      "handler": "dentist-role.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

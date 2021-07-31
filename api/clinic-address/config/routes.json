@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/clinic-addresses",
+      "handler": "clinic-address.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinic-addresses/count",
+      "handler": "clinic-address.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinic-addresses/:id",
+      "handler": "clinic-address.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clinic-addresses",
+      "handler": "clinic-address.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/clinic-addresses/:id",
+      "handler": "clinic-address.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clinic-addresses/:id",
+      "handler": "clinic-address.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

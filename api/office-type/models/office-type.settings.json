@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "office_types",
+  "info": {
+    "name": "Office Type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

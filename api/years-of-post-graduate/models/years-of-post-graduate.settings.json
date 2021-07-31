@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "years_of_post_graduates",
+  "info": {
+    "name": "Years of Post Graduate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

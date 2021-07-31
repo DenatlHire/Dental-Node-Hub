@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/email",
+      "handler": "Email.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newsletter-leads",
+      "handler": "newsletter-leads.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newsletter-leads/count",
+      "handler": "newsletter-leads.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newsletter-leads/:id",
+      "handler": "newsletter-leads.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/newsletter-leads",
+      "handler": "newsletter-leads.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/newsletter-leads/:id",
+      "handler": "newsletter-leads.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/newsletter-leads/:id",
+      "handler": "newsletter-leads.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

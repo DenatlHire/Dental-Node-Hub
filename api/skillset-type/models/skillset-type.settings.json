@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skillset_types",
+  "info": {
+    "name": "Skillset Type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "designation_id": {
+      "model": "designation"
+    }
+  }
+}
