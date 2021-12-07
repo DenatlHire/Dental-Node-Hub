@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "university_programs",
   "info": {
-    "name": "User Program Data",
+    "name": "Education History",
     "description": ""
   },
   "options": {
@@ -12,33 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "university_college_id": {
-      "model": "university-college"
-    },
     "user_id": {
       "plugin": "users-permissions",
       "model": "user"
     },
-    "start_month": {
+    "year_graduation": {
       "type": "string",
       "required": true
     },
-    "start_year": {
-      "type": "string",
-      "required": true
-    },
-    "end_month": {
+    "degree": {
       "type": "string"
     },
-    "end_year": {
+    "institution": {
       "type": "string"
     },
     "is_present": {
       "type": "boolean",
       "default": false
-    },
-    "course_id": {
-      "model": "course"
     }
   }
 }

@@ -120,6 +120,33 @@
     },
     "phone": {
       "type": "string"
+    },
+    "education_history_id": {
+      "type": "string"
+    },
+    "work_history_id": {
+      "type": "string"
+    },
+    "address": {
+      "type": "richtext"
+    },
+    "looking_for": {
+      "type": "string"
+    },
+    "practice_type": {
+      "type": "string"
+    },
+    "clinic_photos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
