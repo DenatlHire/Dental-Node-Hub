@@ -1,0 +1,22 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chat-message/:id",
+      "handler": "Hello.index",
+      "config": {
+        "policies": []
+      },
+      "auth": false
+    },
+    {
+      "method": "POST",
+      "path": "/chat-message",
+      "handler": "chat-message.customCreate",
+      "config": {
+        "policies": []
+      },
+      "auth": false
+    }
+  ]
+}
