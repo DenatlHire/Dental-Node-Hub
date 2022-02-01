@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/saved-profiles",
+      "handler": "saved-profile.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saved-profiles/count",
+      "handler": "saved-profile.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/saved-profiles/:id",
+      "handler": "saved-profile.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/saved-profiles",
+      "handler": "saved-profile.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/saved-profiles/:id",
+      "handler": "saved-profile.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/saved-profiles/:id",
+      "handler": "saved-profile.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

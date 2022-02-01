@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saved_jobs",
+  "info": {
+    "name": "saved job"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "job_id": {
+      "model": "clinic-job"
+    }
+  }
+}

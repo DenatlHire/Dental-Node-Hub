@@ -54,71 +54,21 @@
     "longitude": {
       "type": "string"
     },
-    "city_id": {
-      "model": "city"
-    },
-    "role_id": {
-      "model": "dentist-role"
-    },
-    "year_graduation": {
-      "type": "string",
-      "maxLength": 4
-    },
-    "year_post_graduation": {
-      "type": "string",
-      "maxLength": 4
-    },
     "clinical_experience": {
       "type": "string",
       "maxLength": 4
-    },
-    "administrative_experience": {
-      "type": "string",
-      "maxLength": 4
-    },
-    "total_experience": {
-      "type": "string",
-      "maxLength": 4
-    },
-    "university_id": {
-      "model": "university-college"
     },
     "user_id": {
       "plugin": "users-permissions",
       "model": "user"
     },
-    "resume": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "buy_practice_city_ids": {
-      "type": "string"
-    },
     "hours_time": {
-      "type": "string"
-    },
-    "hours_day": {
-      "type": "string"
-    },
-    "contract_type_id": {
-      "type": "string"
-    },
-    "travel_type_id": {
       "type": "string"
     },
     "office_type_id": {
       "type": "string"
     },
     "skillset_type_id": {
-      "type": "string"
-    },
-    "phone": {
       "type": "string"
     },
     "education_history_id": {
@@ -147,6 +97,12 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "instagram_link": {
+      "type": "string"
+    },
+    "contract_type_id": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinic_jobs",
+  "info": {
+    "name": "clinic job",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "job_title": {
+      "type": "text"
+    },
+    "address": {
+      "type": "text"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "roles": {
+      "model": "designation"
+    },
+    "skills": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "string"
+    }
+  }
+}

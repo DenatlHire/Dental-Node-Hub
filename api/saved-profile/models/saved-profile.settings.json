@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saved_profiles",
+  "info": {
+    "name": "saved profile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "profile_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

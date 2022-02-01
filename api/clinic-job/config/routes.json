@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/clinic-jobs",
+      "handler": "clinic-job.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinic-jobs/count",
+      "handler": "clinic-job.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/clinic-jobs/:id",
+      "handler": "clinic-job.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/clinic-jobs",
+      "handler": "clinic-job.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/clinic-jobs/:id",
+      "handler": "clinic-job.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/clinic-jobs/:id",
+      "handler": "clinic-job.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
