@@ -1,0 +1,19 @@
+{
+  "routes": [{
+    "method": "GET",
+    "path": "/conversation",
+    "handler": "conversation.index",
+    "config": {
+      "policies": []
+    },
+    "auth": false
+  }, {
+    "method": "GET",
+    "path": "/conversation/:id",
+    "handler": "conversation.messages",
+    "config": {
+      "policies": []
+    },
+    "auth": false
+  }]
+}
