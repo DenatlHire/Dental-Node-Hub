@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/chat-message/:id",
-      "handler": "Hello.index",
+      "handler": "chat-message.index",
       "config": {
         "policies": []
       },

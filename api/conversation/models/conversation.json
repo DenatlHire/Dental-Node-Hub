@@ -12,12 +12,10 @@
   "pluginOptions": {},
   "attributes": {
     "participant": {
-      "plugin": "users-permissions",
-      "model": "user"
+      "model": "user-information"
     },
     "otherParticipant": {
-      "plugin": "users-permissions",
-      "model": "user"
+      "model": "user-information"
     }
   }
 }

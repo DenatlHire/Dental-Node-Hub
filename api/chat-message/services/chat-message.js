@@ -12,14 +12,16 @@ module.exports = {
 
     let createdConvo;
     if (!params.conversationId && params.otherParticipant) {
-      const createConvoQuery = await strapi
+      // No conversation id given so create a new one between the two
+      const userInfo = await strapi.services['user-information'].findOne({ user_id: userId });
+      const otherUserInfo = await strapi.services['user-information'].findOne({ user_id: params.otherParticipantId });
+
+      createdConvo = await strapi
         .query('conversation')
         .create({
-          participant: userId,
-          otherParticipant: params.otherParticipant
+          participant: userInfo.id,
+          otherParticipant: otherUserInfo.id
         });
-
-      createdConvo = createConvoQuery;
     }
 
     const result = await strapi

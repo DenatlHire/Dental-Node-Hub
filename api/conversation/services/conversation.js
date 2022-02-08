@@ -26,7 +26,11 @@ module.exports = {
       })
       .fetch();
 
-    const convo = convoQueryResp?.toJSON();
+    if (!convoQueryResp) {
+      return []; 
+    }
+
+    const convo = convoQueryResp.toJSON();
 
     // User can only see the messages if they are a part of the conversation
     if (!convo || ![convo.participant.id, convo.otherParticipant.id].includes(userId)) {

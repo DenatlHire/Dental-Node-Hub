@@ -11,11 +11,9 @@ const {
 module.exports = {
   // Get all conversations for this user
   index: async (ctx, next) => {
-    const entities = await strapi.services.conversation.queryConvos(ctx.state.user.id, ctx.params);
+    const userInfo = await strapi.services['user-information'].findOne({ user_id: ctx.state.user.id });
+    const entities = await strapi.services.conversation.queryConvos(userInfo.id, ctx.params);
 
-    console.log({
-      entities
-    })
     return entities.map(entity => sanitizeEntity(entity, {
       model: strapi.models['conversation']
     }));
