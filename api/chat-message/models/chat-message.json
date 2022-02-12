@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chat_message",
+  "info": {
+    "name": "Chat Message",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "conversation": {
+      "model": "conversation"
+    },
+    "message": {
+      "type": "text"
+    },
+    "senderId": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conversation",
+  "info": {
+    "name": "Conversation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "participant": {
+      "model": "user-information"
+    },
+    "otherParticipant": {
+      "model": "user-information"
+    }
+  }
+}
