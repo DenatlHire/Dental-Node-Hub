@@ -48,6 +48,15 @@
     },
     "availability": {
       "type": "string"
+    },
+    "skillset_type_name": {
+      "type": "string"
+    },
+    "hours_time_name": {
+      "type": "string"
+    },
+    "contract_type_name": {
+      "type": "string"
     }
   }
 }
